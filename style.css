@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+
+}
+body{
+  padding: 0 100px;
+} 
+
+.container {
+    padding-top: 75px;  
+
+  margin: auto;
+  display: grid;
+  grid-template: repeat(8, 80px) / repeat(10, 1fr);
+  gap: 40px;
+  grid-template-areas: 
+  "header header header header . rating1 rating1 rating1 . ."
+  "header header header header . . rating2 rating2 rating2 ."
+  "header header header header . . . rating3 rating3  rating3"
+  "feedback1 feedback1 feedback1 . . . . . . ."
+  "feedback1 feedback1 feedback1 feedback2 feedback2 feedback2 . . . ."
+  ". . . feedback2 feedback2 feedback2 feedback3 feedback3 feedback3 ."
+  ". . . . . . feedback3 feedback3 feedback3 .";
+
+  ;
+  font-family: "League Spartan", sans-serif;}
+.header {
+  grid-area: header;
+}
+.header h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+.header p {
+  color: hsl(303, 10%, 53%);
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+.rating1 {
+  background-color:  hsla(300, 9%, 78%, 0.356);
+  grid-area: rating1;
+  color: hsl(300, 43%, 22%);
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  border-radius: 20px; 
+  margin: 5px ;
+}
+
+
+.rating2 {
+  background-color:  hsla(300, 9%, 78%, 0.356);
+  grid-area: rating2;
+  color: hsl(300, 43%, 22%);
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  border-radius: 20px; 
+  margin: 5px ;
+}
+.rating3 {
+  background-color:  hsla(300, 9%, 78%, 0.356);
+  grid-area: rating3;
+  color: hsl(300, 43%, 22%);
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  border-radius: 20px; 
+  margin: 5px ;
+
+}
+.feedback1 {
+  flex-direction: column;
+    background-color: hsl(300, 43%, 22%);
+    grid-area: feedback1;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+  }
+  .feedback2 {
+    flex-direction: column;
+    background-color: hsl(300, 43%, 22%);
+    grid-area: feedback2;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+  }
+  .feedback3 {
+    flex-direction: column;
+    background-color: hsl(300, 43%, 22%);
+    grid-area: feedback3;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    text-align: center;
+  }
+.vb{
+    color: hsl(333, 80%, 67%);
+}
+.icon{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.fbd{
+    padding: 20px;
+    display: flex;
+}
+.stars {
+  display: flex;
+  gap: 5px; 
+  padding-right: 20px;
+}
+.star {
+  width: 20px; 
+  height: 20px;
+}
+.pa{
+    padding: 20px;
+}
+.vba{
+    padding: 0 20px;
+}
+@media (maxwidth: 400px){
+
+}
